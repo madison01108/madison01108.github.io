@@ -18,7 +18,7 @@ This page features two visualizations created in HW #5, where we used the Bigfoo
 <vegachart schema-url="{{ site.baseurl }}/assets/json/chart1.json" style="width: 100%"></vegachart>
 
 I created a bar chart visualization with altair that depicts the count of total reports of Bigfoot by each season. Note that not a small minority of observations have been omitted as they had a value of 'Unknown' in the 'Season' column, which was problematic for our visualization. The 'Season' column was encoded as a nominal variable on the x-axis, while the total number of reports is a quantitative variable on the y-axis, which was produced from altair's `count()` encoding shorthand aggregate method. I also colored the bars by season using the altair's `category10` color scheme, as the original altair documentation page directs you to a list of color schemes, where 'category10' is ideal for encoding discrete data values as our season value function as distinct, nominal cateogories. I also renamed the original 'season' column from our dataset to`Season` to ensure that the title casing would be more cohesive with the rest of our visualization structure, since the other labels all have a consistent uppercase. I chose the 'Seasons' column as what we wanted to encode by here because it can reveal seasonal trends of Bigfoot reports by letting viewers understand which season(s) reports are clustered. In our visualization results, we can deduce that sightings cluster most in warmer months (specifically summer) when more people are likely to be outdoors. 
-# 2. Bigfoot reports per year
+# 2. Yearly Distribution of Bigfoot reports by Season
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/chart2.json" style="width: 100%"></vegachart>
 
