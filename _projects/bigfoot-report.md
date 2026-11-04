@@ -1,14 +1,14 @@
 ---
 name: Bigfoot Sightings Reports
+permalink: /projects/bigfoot-report/
 tools: [Python, Altair, vega-lite]
-description: Two Altair visualizations of Bigfoot sighting reports, with an interactive season dropdown.
+description: Two Altair visualizations of Bigfoot sighting reports with an interactive season dropdown (HW 5).
 custom_js:
   - vega.min
   - vega-lite.min
   - vega-embed.min
   - justcharts
 ---
-
 # Introduction
 
 This page features two visualizations created in HW #5, where we used the Bigfoot Field Researchers Organization (BFRO) sightings dataset. I first used the pandas library to assist me with the data cleaning, filtering, and aggregration to ensure that my data was modified from the dataset to be called by the altair library properly. The altair library did most of the work with actually producing the visualizations, customized to the intentional design and interaction goals. These results were then exported with JSON for this page.
